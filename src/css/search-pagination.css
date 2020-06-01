@@ -1,0 +1,61 @@
+/* Source : https://getuikit.com/docs/pagination*/
+/* ========================================================================
+   Component: Pagination
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Gutter
+ * 3. Reset list
+ */
+ .uk-pagination {
+    display: flex;
+    /* 1 */
+    flex-wrap: wrap;
+    /* 2 */
+    margin-left: -20px;
+    /* 3 */
+    padding: 0;
+    list-style: none;
+  }
+  /*
+   * 1. Space is allocated solely based on content dimensions: 0 0 auto
+   * 2. Gutter
+   * 3. Create position context for dropdowns
+   */
+  .uk-pagination > * {
+    /* 1 */
+    flex: none;
+    /* 2 */
+    padding-left: 20px;
+    /* 3 */
+    position: relative;
+  }
+  /* Items
+   ========================================================================== */
+  /*
+   * 1. Prevent gap if child element is `inline-block`, e.g. an icon
+   * 2. Style
+   */
+  .uk-pagination > * > * {
+    /* 1 */
+    display: block;
+    /* 2 */
+    color: #999;
+    transition: color 0.1s ease-in-out;
+  }
+  /* Hover + Focus */
+  .uk-pagination > * > :hover,
+  .uk-pagination > * > :focus {
+    color: #666;
+    text-decoration: none;
+  }
+  /* Active */
+  .uk-pagination > .uk-active > * {
+    color: #666;
+  }
+  /* Disabled */
+  .uk-pagination > .uk-disabled > * {
+    color: #999;
+  }
+  /* End UIKIT */
+

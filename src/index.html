@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Elastic Search UI Webcomponent Demo</title>
+    <script src="webcomponents/webcomponents-loader.js"></script>
+</head>
+<body>
+    <search-provider
+        config='{ "debug": true, "apiConnector": { "searchKey": "search-3493gera4z2iiew7gywtmfwy", "engineName": "huducu", "hostIdentifier": "host-x9sasu" }, "searchQuery": { "disjunctiveFacets": [ "actors", "genre", "director", "year" , "imdbrating" , "country" ], "facets": { "imdbrating": { "type": "range", "ranges": [ { "from": 0, "to": 2, "name": "0-2" }, { "from": 2, "to": 4, "name": "2-4" }, { "from": 4, "to": 6, "name": "4-6" }, { "from": 6, "to": 8, "name": "6-8" }, { "from": 8, "to": 10, "name": "8-10" } ] }, "actors": { "type": "value" }, "genre": { "type": "value" }, "director": { "type": "value" }, "year": { "type": "value" } } } }'>
+        <search-layout>
+            <template>
+                <div class="col-6">
+                    <div class="suiwc-card suiwc-card-default">
+                        <div class="suiwc-card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img style="height:150px;width:100px" src="{{poster.raw}}" />
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <b>{{title.raw}}</b> ( {{year.raw}} )
+                                        </div>
+                                        <div class="col-12">
+                                            <span class="suiwc-divider"> {{rated.raw}} </span>
+                                            <span class="suiwc-divider"> {{language.raw}} </span>
+                                            <span class="suiwc-divider"> {{imdbrating.raw}} </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </template>       
+        </search-layout>
+    </search-provider>
+</body>
+</html>

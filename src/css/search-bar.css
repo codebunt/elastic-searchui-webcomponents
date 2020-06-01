@@ -1,0 +1,215 @@
+/* Source : https://getuikit.com*/
+
+/* ========================================================================
+   Component: Search
+ ========================================================================== */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Reset `form`
+ */
+ .uk-search {
+    /* 1 */
+    display: inline-block;
+    /* 2 */
+    position: relative;
+    /* 3 */
+    max-width: 100%;
+    /* 4 */
+    margin: 0;
+  }
+  /* Input
+   ========================================================================== */
+  /*
+   * Remove the inner padding and cancel buttons in Chrome on OS X and Safari on OS X.
+   */
+  .uk-search-input::-webkit-search-cancel-button,
+  .uk-search-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  /*
+   * Removes placeholder transparency in Firefox.
+   */
+  .uk-search-input::-moz-placeholder {
+    opacity: 1;
+  }
+  /*
+   * 1. Define consistent box sizing.
+   * 2. Address margins set differently in Firefox/IE and Chrome/Safari/Opera.
+   * 3. Remove `border-radius` in iOS.
+   * 4. Change font properties to `inherit` in all browsers
+   * 5. Show the overflow in Edge.
+   * 6. Remove default style in iOS.
+   * 7. Vertical alignment
+   * 8. Take the full container width
+   * 9. Style
+   */
+  .uk-search-input {
+    /* 1 */
+    box-sizing: border-box;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+    border-radius: 0;
+    /* 4 */
+    font: inherit;
+    /* 5 */
+    overflow: visible;
+    /* 6 */
+    -webkit-appearance: none;
+    /* 7 */
+    vertical-align: middle;
+    /* 8 */
+    width: 100%;
+    /* 9 */
+    border: none;
+    color: #666;
+  }
+  .uk-search-input:focus {
+    outline: none;
+  }
+  /* Placeholder */
+  .uk-search-input:-ms-input-placeholder {
+    color: #999 !important;
+  }
+  .uk-search-input::placeholder {
+    color: #999;
+  }
+  /* Icon (Adopts `uk-icon`)
+   ========================================================================== */
+  /*
+   * Remove default focus style
+   */
+  .uk-search-icon:focus {
+    outline: none;
+  }
+  /*
+   * Position above input
+   * 1. Set position
+   * 2. Center icon vertically and horizontally
+   * 3. Style
+   */
+  .uk-search .uk-search-icon {
+    /* 1 */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* 2 */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* 3 */
+    color: #999;
+  }
+  /*
+   * Required for `a`.
+   */
+  .uk-search .uk-search-icon:hover {
+    color: #999;
+  }
+  /*
+   * Make `input` element clickable through icon, e.g. if it's a `span`
+   */
+  .uk-search .uk-search-icon:not(a):not(button):not(input) {
+    pointer-events: none;
+  }
+  /*
+   * Position modifier
+   */
+  .uk-search .uk-search-icon-flip {
+    right: 0;
+    left: auto;
+  }
+  /* Default modifier
+   ========================================================================== */
+  .uk-search-default {
+    width: 180px;
+  }
+  /*
+   * Input
+   */
+  .uk-search-default .uk-search-input {
+    height: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+  }
+  /* Focus */
+  .uk-search-default .uk-search-input:focus {
+    background-color: transparent;
+  }
+  /*
+   * Icon
+   */
+  .uk-search-default .uk-search-icon {
+    width: 40px;
+  }
+  .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+    padding-left: 40px;
+  }
+  .uk-search-default .uk-search-icon-flip ~ .uk-search-input {
+    padding-right: 40px;
+  }
+  /* Navbar modifier
+   ========================================================================== */
+  .uk-search-navbar {
+    width: 400px;
+  }
+  /*
+   * Input
+   */
+  .uk-search-navbar .uk-search-input {
+    height: 40px;
+    background: transparent;
+    font-size: 1.5rem;
+  }
+  /*
+   * Icon
+   */
+  .uk-search-navbar .uk-search-icon {
+    width: 40px;
+  }
+  .uk-search-navbar .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+    padding-left: 40px;
+  }
+  .uk-search-navbar .uk-search-icon-flip ~ .uk-search-input {
+    padding-right: 40px;
+  }
+  /* Large modifier
+   ========================================================================== */
+  .uk-search-large {
+    width: 500px;
+  }
+  /*
+   * Input
+   */
+  .uk-search-large .uk-search-input {
+    height: 80px;
+    background: transparent;
+    font-size: 2.625rem;
+  }
+  /*
+   * Icon
+   */
+  .uk-search-large .uk-search-icon {
+    width: 80px;
+  }
+  .uk-search-large .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+    padding-left: 80px;
+  }
+  .uk-search-large .uk-search-icon-flip ~ .uk-search-input {
+    padding-right: 80px;
+  }
+  /* Toggle
+   ========================================================================== */
+  .uk-search-toggle {
+    color: #999;
+  }
+  /* Hover + Focus */
+  .uk-search-toggle:hover,
+  .uk-search-toggle:focus {
+    color: #666;
+  }

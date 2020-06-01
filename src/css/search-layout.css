@@ -1,0 +1,17 @@
+.kontainer {
+    border: 1px solid #eee;
+    padding: 0px;
+}
+
+hr {
+    border: .5px solid #eee;
+}
+
+.results-container {
+    margin-left: 0px;
+}
+
+.facets-container {
+    margin-right: 0px;
+}
+
