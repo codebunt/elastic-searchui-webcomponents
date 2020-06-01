@@ -1,6 +1,8 @@
 # Elastic SearchUI Webcomponent demo
 A Demo webcomponent Implementaion of Elastic Search UI ( [App Search](https://www.elastic.co/app-search/) ) using [Lit-Element](https://lit-element.polymer-project.org/)
 
+ ![](http://g.recordit.co/XzHDQ0gKu8.gif)
+
 ### Usage
 * Add the script to your *head* or *body* tag: 
 ```
@@ -41,7 +43,6 @@ A Demo webcomponent Implementaion of Elastic Search UI ( [App Search](https://ww
       </search-provider>
     ```
  Thats it!!
- 
 ### Configuration
 The *config* attribute in *search-provider* will have the info about app-search.If you dont specify one it will use a default dataset.
 For example:
