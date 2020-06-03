@@ -6,7 +6,7 @@ A Demo webcomponent Implementaion of Elastic Search UI ( [App Search](https://ww
 ### Usage
 * Add the script to your *head* or *body* tag: 
 ```
-    <script src="https://cdn.jsdelivr.net/npm/es-searchui-wc@0.0.1-beta/dist/es-searchui-wc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es-searchui-wc@0.0.2/dist/es-searchui-wc.js"></script>
 ```
 
 * Add the component tags inside the *body* tag  :
