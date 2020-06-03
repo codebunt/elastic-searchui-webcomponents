@@ -57,10 +57,7 @@ class SearchProvider extends LitElement {
         alert("Bad Config Passed. Using default.");
       }
     }
-    if (!this.config) {
-      this.config = defaultconfig;
-    }
-    this.driver = new SearchDriver(defaultconfig);
+    this.driver = new SearchDriver(config);
     this.driver.subscribeToStateChanges(state => {
       this.fireOnDriverReady();
     });

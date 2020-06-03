@@ -31,6 +31,7 @@ class SearchPagination extends LitElement {
     render() {
         var pages = [];
         this.current = parseInt(this.current);
+        // First Page
         if (this.current - 3 > 1) {
             pages.push(this.getPageLink(1));
         }
@@ -44,8 +45,12 @@ class SearchPagination extends LitElement {
         }
         if (this.current + 3 < this.pagecount) {
             pages.push(html`<li class="uk-disabled"><span>...</span></li>`);
+        }
+        // Last Page
+        if (this.current + 3 <= this.pagecount) {
             pages.push(this.getPageLink(this.pagecount));
         }
+
         return html`
             <style>
                 ${searchpaginationcss}
