@@ -1,5 +1,5 @@
 # Elastic SearchUI Webcomponent demo
-A Demo webcomponent Implementaion of Elastic Search UI ( [App Search](https://www.elastic.co/app-search/) ) using [Lit-Element](https://lit-element.polymer-project.org/)
+A Demo webcomponent Implementation of Elastic Search UI ( [App Search](https://www.elastic.co/app-search/) ) using [Lit-Element](https://lit-element.polymer-project.org/)
 
  ![](http://g.recordit.co/XzHDQ0gKu8.gif)
 
